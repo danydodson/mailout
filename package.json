@@ -4,8 +4,7 @@
   "description": "MailChimp Newsletter Signup ",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon app.js"
   },
   "author": "Dany Dodson",
   "license": "ISC",
