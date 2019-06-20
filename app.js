@@ -33,10 +33,8 @@ app.post('/', function(req, res) {
 
   var options = {
     url: process.env.URL,
-    //url: 'https://us18.api.mailchimp.com/3.0/lists/f1f742e557',
     method: 'POST',
     headers: { Authorization: process.env.HEADERS },
-    //headers: { Authorization: 'dany1 37c30a96614e24c889af796860207c22-us18' },
     body: jsonData
   }
 
