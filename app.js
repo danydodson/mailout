@@ -1,16 +1,15 @@
-const bodyParser = require('body-parser')
 const express = require('express')
 const request = require('request')
 const app = express()
 
 require('dotenv').config()
 
+app.use(express.json())
 app.use(express.static('public'))
-app.use(bodyParser.urlencoded({ extended: true }))
 
 // SIGNUP
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/public/signup.html')
+  res.sendFile(__dirname + '/public/index.html')
 })
 
 // POST
